@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background — CS1102 Group Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">CS1102 — LLM for Legal Applications</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="background.html">Background</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="discovery.html">Discoveries</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <span class="eyebrow">Topic 3B</span>
+  <h1>Background</h1>
+  <p class="sub">What are Large Language Models, and how are they being used in law?</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>What Are Large Language Models?</h2>
+    <p>
+      Large Language Models (LLMs) are a type of artificial intelligence that works like a
+      conversational assistant. You ask a question and it gives you a direct, organised answer,
+      similar to a search engine but instead of showing you a list of links, it processes the
+      information and responds in natural language as if you were talking to a person. At first
+      glance this seems like a more reliable and efficient way to find information, but as we
+      discovered through our experiments, accuracy is not always guaranteed.
+    </p>
+  </section>
+
+  <section>
+    <h2>How LLMs Are Trained</h2>
+    <p>
+      LLMs learn through a process called Reinforcement Learning from Human Feedback. Fine
+      tuning comes first, where human trainers demonstrate examples of good question and
+      answer pairs to the model, then rank the model's own outputs from best to worst. A reward
+      system uses these rankings to gradually push the model towards giving answers that match
+      human preferences. On top of this, LLMs are trained on massive amounts of text data from
+      the internet, books and other sources, which allows them to match patterns in that training
+      data to whatever question a user asks and produce a response in natural, readable language.
+    </p>
+  </section>
+
+  <section>
+    <h2>LLMs in the Legal Industry</h2>
+    <p>
+      In the legal industry, LLMs are increasingly being used to assist with tasks that are
+      time consuming and tedious, such as legal research, document drafting, proofreading and
+      case summarization. Much like looking up a known word in a dictionary to verify its exact
+      definition, lawyers often use AI to quickly confirm information they already have a general
+      understanding of, rather than reading through hundreds of pages of case law or legislation
+      manually. Real world tools built on LLMs such as Harvey AI, which is used by major law
+      firms, and Westlaw AI, which assists with legal research and case retrieval, have already
+      been adopted in the legal industry to speed up these workflows.
+    </p>
+    <div class="highlight">
+      <p>
+        <strong>Examples of legal AI in practice:</strong> Harvey AI is used by major international
+        law firms to automate document review and legal drafting. Westlaw AI integrates AI-powered
+        research into one of the world's largest legal databases, helping lawyers find relevant
+        case law and statutes in seconds rather than hours.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The Risk of Misplaced Confidence</h2>
+    <p>
+      But this convenience comes with a real danger, particularly in high stakes fields like law.
+      When searching the internet, users naturally encounter multiple sources and links which
+      forces them to read carefully and apply critical thinking before reaching a conclusion. With
+      AI, this instinct is bypassed. The answer arrives in a single, organised, confident response
+      written in natural human language, making it far more convincing than it may deserve to be.
+    </p>
+    <p>
+      Most people would not think to cross check an AI answer with a second AI model or an
+      official source, and since LLMs generate answers by matching patterns in training data
+      rather than recalling verified facts the way a documented source would, there is a real risk of
+      receiving false information presented so convincingly that the user has no reason to question
+      it.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p class="footer-course">CS1102 - Course Project - 2025 / 2026 Semester B</p>
+  <p class="footer-members">Tsoi Chun Wai &nbsp;·&nbsp; Wong Wai Kin &nbsp;·&nbsp; Wong Hui Nam</p>
+</footer>
+
+<script>
+  const page = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === page) a.classList.add('active');
+  });
+</script>
+
+</body>
+</html>
